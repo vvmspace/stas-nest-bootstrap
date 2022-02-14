@@ -51,4 +51,6 @@ src/item/item.command.ts
 ---
 
 ## TODO: 
-Check DB DI
+- Update ConfigService
+- Create AppBaseEntity
+- Check DB DI
