@@ -29,8 +29,10 @@
 ## Installation
 
 ```bash
+cp .env.example .env
 npm install
 npm run start:dev:db
+npm run pretypeorm
 ```
 
 ## CLI example
