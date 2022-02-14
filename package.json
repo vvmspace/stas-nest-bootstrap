@@ -16,7 +16,7 @@
     "start:dev:db": "src/scripts/dev-db.sh",
     "pretypeorm": "(rm ormconfig.json || :) && ts-node -r tsconfig-paths/register src/scripts/build-orm-config.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "typeorm:migration:generate": "npm run typeorm -- migration:generate -n --",
+    "typeorm:migration:generate": "npm run typeorm -- migration:generate",
     "typeorm:migration:run": "npm run typeorm -- migration:run",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
@@ -29,13 +29,15 @@
     "@nestjs/common": "^7.5.1",
     "@nestjs/core": "^7.5.1",
     "@nestjs/platform-express": "^7.5.1",
-    "@nestjs/typeorm": "^8.0.3",
+    "@nestjs/typeorm": "^7.0.3",
     "dotenv": "^16.0.0",
+    "nestjs-command": "^3.1.1",
     "pg": "^8.7.3",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.3",
-    "typeorm": "^0.2.41"
+    "rxjs": "^7.5.1",
+    "typeorm": "^0.2.41",
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.5.1",
